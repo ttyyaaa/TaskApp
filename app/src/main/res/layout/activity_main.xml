@@ -8,10 +8,24 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/category_search_text"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="カテゴリーの絞り込み"/>
+
+    <Button
+        android:id="@+id/category_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:text="検索" />
+
     <ListView
         android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
